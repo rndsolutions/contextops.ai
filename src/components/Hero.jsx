@@ -46,21 +46,25 @@ export default function Hero({ videoUrl }) {
 
                     </p>
                 </div>
-                <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-auto">
+                <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-full max-h-[450px]">
                   <div className="w-full aspect-video max-w-lg lg:max-w-full">
                         {i18n.language  === 'bg' ? (
                             <iframe
                                 width="100%"
-                                height="400"
+                                height="100%"
                                 src="https://www.loom.com/embed/0f13d82c44e34692acb3bb94f5d1aa69?sid=112a03b8-72b0-4ce7-8d29-9f881506fc6b"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Video BG"
+                                frameborder="0"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen
                             ></iframe>
+
+
                         ) : (
                             <iframe
                                 width="100%"
-                                height="400"
+                                height="100%"
                                 src="https://www.loom.com/embed/30012d67d8534cf88c7e974bca82f199?sid=333acb5d-678d-4c4c-81c7-dbe1634e08b6"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
