@@ -32,8 +32,8 @@ export default function Hero({ videoUrl }) {
     const displayedText = useTypewriterEffect(t('hero.title'), 100); // Ensure the full text is used
     return (
         <section className="bg-white">
-            <div className="grid max-w-screen-xl px-6 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                <div className="mr-auto place-self-center lg:col-span-7">
+            <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-8 lg:py-16 lg:grid-cols-12">
+                <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left">
                     <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
                         {displayedText}
                     </h1>
@@ -47,7 +47,7 @@ export default function Hero({ videoUrl }) {
                     </p>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-full max-h-[450px]">
-                  <div className="w-full aspect-video max-w-lg lg:max-w-full">
+                  <div className="w-full aspect-video max-w-lg lg:max-w-full flex justify-center items-center min-w-[200px]">
                         {i18n.language  === 'bg' ? (
                             <iframe
                                 width="100%"
