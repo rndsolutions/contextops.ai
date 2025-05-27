@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { smoothScrollTo } from "../utils/scrollUtils";	
-
+import { smoothScrollTo } from "../utils/scrollUtils";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export default function Menu() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const { t } = useTranslation();
 
 	return (
 		<header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
@@ -31,47 +33,44 @@ export default function Menu() {
 
 				{/* Heading */}
 				<div className="mr-auto text-md font-semibold text-neutral-900 flex gap-1 items-center">
-					<img src="/public/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />					
-					<span className="  whitespace-nowrap"> With </span>
-					<span role="img" aria-label="heart" className="whitespace-nowrap">
-						❤️
-					</span>
-					<span className="whitespace-nowrap">by R&amp;D Solutions</span>
+					<img src="/public/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />
+					<span className="  whitespace-nowrap"> {t("menu.title")}</span>
 				</div>
 
 				{/* Navigation Menu */}
 				<nav
-					className={`${
-						isMenuOpen ? "block max-w-[220px]" : "hidden"
-					} absolute top-full left-0 w-full bg-white shadow-md lg:static lg:flex lg:gap-6 lg:shadow-none lg:bg-transparent text-sm font-medium text-neutral-700`}
+					className={`${isMenuOpen ? "block max-w-[220px]" : "hidden"
+						} absolute top-full left-0 w-full bg-white shadow-md lg:static lg:flex lg:gap-6 lg:shadow-none lg:bg-transparent text-sm font-medium text-neutral-700`}
 				>
 					<a href="#" className="ml-auto block px-4 py-2 lg:p-0 hover:text-blue-600">
-						Home
+						{t("menu.home")}
 					</a>
 					<a
 						href="#"
 						onClick={() => smoothScrollTo("why")}
 						className="block px-4 py-2 lg:p-0 hover:text-blue-600"
 					>
-						Why Us
+						{t("menu.whyUs")}
 					</a>
 					<a
 						href="#"
 						onClick={() => smoothScrollTo("aiBenefits")}
 						className="block px-4 py-2 lg:p-0 hover:text-blue-600"
 					>
-						AI Benefits
+						{t("menu.aiBenefits")}
 					</a>
-			
+
 					<a
 						href="#"
 						onClick={() => smoothScrollTo("contacts")}
 						className="block px-4 py-2 lg:p-0 hover:text-blue-600"
 					>
-						Contact
+						{t("menu.contact")}
 					</a>
-					
+
+
 				</nav>
+				<LanguageSwitcher />
 			</div>
 		</header>
 	);

@@ -1,4 +1,5 @@
-import { smoothScrollTo } from '../utils/scrollUtils'; 
+import { smoothScrollTo } from '../utils/scrollUtils';
+import { useTranslation } from "react-i18next";
 export default function Features({
   orientation = "left",
   imageSrc,
@@ -6,12 +7,12 @@ export default function Features({
   description,
 }) {
   const isImageLeft = orientation === "left";
+  const { t } = useTranslation();
   return (
     <section className="bg-white">
       <div
-        className={`gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 ${
-          isImageLeft ? "md:flex-row" : "md:flex-row-reverse"
-        }`}
+        className={`gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 ${isImageLeft ? "md:flex-row" : "md:flex-row-reverse"
+          }`}
       >
         {isImageLeft ? (
           <>
@@ -27,7 +28,7 @@ export default function Features({
                 onClick={() => smoothScrollTo("contacts")}
                 className="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 mb-4 w-40"
               >
-                Get Started
+                {t('buttons.getStarted')}
                 <svg
                   className="ml-2 -mr-1 w-5 h-5"
                   fill="currentColor"
@@ -58,7 +59,7 @@ export default function Features({
               onClick={() => smoothScrollTo("contacts")}
               className="mt-5 inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 w-40"
             >
-              Get started
+              {t('buttons.getStarted')}
               <svg
                 className="ml-2 -mr-1 w-5 h-5"
                 fill="currentColor"
