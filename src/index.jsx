@@ -9,7 +9,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const basename = process.env.PUBLIC_URL || "/";
+const basename = "/";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

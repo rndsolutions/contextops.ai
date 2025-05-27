@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const base = process.env.PUBLIC_URL || '/'
+const base = '/'
 
 // https://vite.dev/config/
 export default defineConfig({
