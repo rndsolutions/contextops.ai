@@ -7,4 +7,14 @@ const base = '/'
 export default defineConfig({
   base,
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
+  server: {
+    historyApiFallback: true,
+  },
 })
