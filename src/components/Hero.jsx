@@ -31,9 +31,9 @@ export default function Hero({ videoUrl }) {
     const { t, i18n } = useTranslation();
     const displayedText = useTypewriterEffect(t('hero.title'), 100); // Ensure the full text is used
     return (
-        <section className="bg-white">
-            <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-8 lg:py-16 lg:grid-cols-12">
-                <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left">
+        <section className="bg-white overflow-hidden">
+            <div className="grid max-w-screen-xl px-4 py-8 mx-auto gap-8 lg:py-16 lg:grid-cols-12 overflow-hidden">
+                <div className="mr-auto place-self-center lg:col-span-7 text-center lg:text-left px-4">
                     <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
                         {displayedText}
                     </h1>
