@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 export default function MainPage() {
   const { t } = useTranslation();
   return (
-    <div className="min-h-screen bg-white text-neutral-900 font-sans">
+    <div className="min-h-screen bg-background text-text font-body">
       {/* Header */}
       <Menu />
 
@@ -21,34 +21,34 @@ export default function MainPage() {
         className="w-full h-auto"
       />
 
-      <div className="h-1 bg-gray-200"></div>
-      <section className="py-12 px-6 bg-white" id="aiBenefits">
+      <div className="h-px bg-gray-200"></div>
+      <section className="py-12 px-6 bg-background" id="aiBenefits">
         {/* AI Benefits */}
         <AIBenefits />
-        <div className="h-1 bg-gray-200"></div>
+        <div className="h-px bg-gray-200"></div>
         {/* AI Benefits end */}
 
         <Features
           orientation="right"
-          imageSrc="/knowledge_ai.png"
+          imageSrc="/old_building.jpg"
           title={t('features.feature1Title')}
           description={t('features.feature1Description')}
         />
-        <div className="h-1 bg-gray-200"></div>
+        <div className="h-px bg-gray-200"></div>
         <Features
           orientation="left"
-          imageSrc="/smarter_team.png"
+          imageSrc="/team_sign.jpg"
           title={t('features.feature2Title')}
           description={t('features.feature2Description')}
         />
-        <div className="h-1 bg-gray-200"></div>
+        <div className="h-px bg-gray-200"></div>
         <Features
           orientation="right"
-          imageSrc="/security.png"
+          imageSrc="/books_lib.jpg"
           title={t('features.feature3Title')}
           description={t('features.feature3Description')}
         />
-        <div className="h-1 bg-gray-200"></div>
+        <div className="h-px bg-gray-200"></div>
         {/* New Section end */}
 
         {/* Why Section*/}
@@ -58,32 +58,32 @@ export default function MainPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <div>
-              <h3 className="text-xl font-medium mb-3">
+              <h3 className="text-xl font-medium mb-3 underline">
                 {t('whySection.item1Title')}
               </h3>
-              <p className="text-neutral-600">
+              <p className="text-gray-400">
                 {t('whySection.item1Description')}
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">
+              <h3 className="text-xl font-medium mb-3 underline">
                 {t('whySection.item2Title')}
               </h3>
-              <p className="text-neutral-600">
+              <p className="text-gray-400">
                 {t('whySection.item2Description')}
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">
+              <h3 className="text-xl font-medium mb-3 underline">
                 {t('whySection.item3Title')}
               </h3>
-              <p className="text-neutral-600">
+              <p className="text-gray-400">
                 {t('whySection.item3Description')}
               </p>
             </div>
           </div>
         </section>
-        <div className="h-1 bg-gray-200"></div>
+        <div className="h-px bg-gray-200"></div>
 
         {/* Pricing */}
         {/* <section id="pricing" className="py-24 px-6 bg-white text-center">

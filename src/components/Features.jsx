@@ -9,7 +9,7 @@ export default function Features({
   const isImageLeft = orientation === "left";
   const { t } = useTranslation();
   return (
-    <section className="bg-white">
+    <section className="bg-background">
       <div
         className={`gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 ${isImageLeft ? "md:flex-row" : "md:flex-row-reverse"
           }`}
@@ -18,10 +18,10 @@ export default function Features({
           <>
             <img className="w-full" src={imageSrc} alt="feature image" />
             <div className="mt-4 md:mt-0">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-text">
                 {title}
               </h2>
-              <p className="mb-6 font-light text-gray-500 md:text-lg">
+              <p className="mb-6 font-light text-gray-400 md:text-lg">
                 {description}
               </p>
               <button
@@ -47,10 +47,10 @@ export default function Features({
         ) : (
           <>
             <div className="mb-4 mt-4 md:mt-0">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-text">
                 {title}
               </h2>
-              <p className="mb-6 font-light text-gray-500 md:text-lg">
+              <p className="mb-6 font-light text-gray-400 md:text-lg">
                 {description}
               </p>
             </div>
