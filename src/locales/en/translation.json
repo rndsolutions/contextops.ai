@@ -7,28 +7,28 @@
     "aiBenefits": {
         "title": "Discover the Power of Legal AI for Your Team",
         "description": "ContextOps.ai transforms how legal teams handle documents by automating repetitive work, surfacing insights, and enabling faster, smarter decisions. Let us help your legal team do more with less.",
-        "item1Title": "⚡ Boost Productivity & Save Time",
+        "item1Title": "Boost Productivity & Save Time",
         "item1Description": "Automate contract reviews, clause comparisons, and summaries — so your legal professionals can focus on strategy, not admin.",
-        "item2Title": "🧠 Make Confident Legal Decisions",
+        "item2Title": "Make Confident Legal Decisions",
         "item2Description": "Get real-time risk analysis and clause insights that help your team move faster with clarity and control.",
-        "item3Title": "🔍 Unlock Institutional Knowledge",
+        "item3Title": "Unlock Institutional Knowledge",
         "item3Description": "Turn dense policies and contracts into shareable summaries and FAQs. Ensure your whole team is aligned and informed."
     },
     "features": {
-        "feature1Title": "🏛️ Centralize Your Legal Knowledge with AI",
+        "feature1Title": "Centralize Your Legal Knowledge with AI",
         "feature1Description": "Whether it's contracts, memos, compliance policies, or internal playbooks — bring your legal team's expertise into one secure AI workspace. ContextOps.ai ensures private, on-demand access to institutional knowledge with no data leakage or external exposure.",
-        "feature2Title": "🧠 Smarter Legal Teams, Faster Decisions",
+        "feature2Title": "Smarter Legal Teams, Faster Decisions",
         "feature2Description": "Accelerate legal workflows with AI-powered context, real-time clause suggestions, and instant access to institutional knowledge. ContextOps.ai adds legal insight to every interaction — turning routine reviews into strategic decisions.",
-        "feature3Title": "🛡️ Deploy Legal AI Your Way — Cloud, Hybrid, or Private",
+        "feature3Title": "Deploy Legal AI Your Way — Cloud, Hybrid, or Private",
         "feature3Description": "ContextOps.ai adapts to your legal team’s infrastructure and compliance needs. Whether you require cloud-based simplicity, hybrid security, or a fully private deployment, our platform gives you full control — without sacrificing performance or privacy."
     },
     "whySection": {
         "title": "Why Choose ContextOps.ai?",
-        "item1Title": "🏗️ Built for Legal-Grade Performance",
+        "item1Title": "Built for Legal-Grade Performance",
         "item1Description": "Hosted on secure, scalable infrastructure with enterprise-grade reliability. ContextOps.ai ensures your legal workflows stay fast, available, and responsive — even during high-volume contract reviews.",
-        "item2Title": "🔐 Security & Compliance by Design",
+        "item2Title": "Security & Compliance by Design",
         "item2Description": "Your legal data stays protected with end-to-end encryption, strict access controls, and full GDPR alignment. ContextOps.ai is built for teams where confidentiality isn’t optional — it’s mission-critical.",
-        "item3Title": "⚙️ Fast Deployment, Zero Overhead",
+        "item3Title": "Fast Deployment, Zero Overhead",
         "item3Description": "No complex setup, no IT headaches. Our platform plugs into your existing document tools — so your team can start reviewing contracts, drafting memos, and analyzing risk within minutes."
     },
     "buttons": {

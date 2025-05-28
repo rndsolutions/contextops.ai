@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default (light) theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --primary-color: #3b82f6;
+  --primary-bg: #0b0d0f; /* your custom primary-800 */
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #0b0d0f;
+  --text-color: #f3f4f6;
+  --primary-color: #60a5fa;
+  --primary-bg: #1e3a8a;
+}
+
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
