@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function CookiesConsent() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const hasConsent = localStorage.getItem("cookiesConsent");
+    if (hasConsent !== "true") {
+      setIsOpen(true);
+    }
+  }, []);
+
+  const handleClose = () => {
+    localStorage.setItem("cookiesConsent", "true");
+    setIsOpen(false);
+  };
 
   if (!isOpen) return null;
 
@@ -48,6 +60,14 @@ export default function CookiesConsent() {
             >
               {t("buttons.learnMore")}
             </a>
+            <button
+              type="button"
+             className="px-4 py-2 bg-white text-indigo-600 text-sm font-medium rounded-md hover:bg-indigo-50 whitespace-nowrap"
+              aria-label="ок"
+              onClick={handleClose}
+            >
+              {t("buttons.ok")}
+            </button>
             <button
               type="button"
               className="p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
