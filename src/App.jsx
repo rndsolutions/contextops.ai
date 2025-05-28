@@ -58,7 +58,7 @@ export default function MainPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
             <div>
-              <h3 className="text-xl font-medium mb-3">
+              <h3 className="text-xl font-medium mb-3 underline">
                 {t('whySection.item1Title')}
               </h3>
               <p className="text-gray-400">
@@ -66,7 +66,7 @@ export default function MainPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">
+              <h3 className="text-xl font-medium mb-3 underline">
                 {t('whySection.item2Title')}
               </h3>
               <p className="text-gray-400">
@@ -74,7 +74,7 @@ export default function MainPage() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">
+              <h3 className="text-xl font-medium mb-3 underline">
                 {t('whySection.item3Title')}
               </h3>
               <p className="text-gray-400">
