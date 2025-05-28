@@ -7,7 +7,7 @@ const MarkdownViewer = ({ fileName }) => {
   const [markdown, setMarkdown] = useState('');
 
   useEffect(() => {
-    const lang = i18n.language || 'en';
+    const lang = (i18n.language || 'en').split('-')[0];
     const url = `/locales/${lang}/${fileName}`;
 
     fetch(url)

@@ -84,7 +84,7 @@ export default function Footer() {
           <ul className="space-y-2 text-neutral-400">
             <li>
               <a
-                href="/privacy/"
+                href="#/privacy"
                 className="hover:text-white"
               >
                 {t('footer.privacy')}
@@ -92,7 +92,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="/terms/"
+                href="#/terms"
                 className="hover:text-white"
               >
                 {t('footer.terms')}

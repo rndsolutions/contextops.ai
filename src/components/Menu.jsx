@@ -68,9 +68,9 @@ export default function Menu() {
 						{t("menu.contact")}
 					</a>
 
+					<LanguageSwitcher />
 
 				</nav>
-				<LanguageSwitcher />
 			</div>
 		</header>
 	);

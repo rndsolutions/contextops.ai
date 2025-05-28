@@ -7,7 +7,7 @@ function useTypewriterEffect(text, speed) {
 
     useEffect(() => {
         let index = 0;
-          setDisplayedText(''); // ✅ Reset text when input changes
+        setDisplayedText(''); // ✅ Reset text when input changes
         const interval = setInterval(() => {
             if (index < text.length) {
                 const nextChar = text.charAt(index);
@@ -47,8 +47,8 @@ export default function Hero({ videoUrl }) {
                     </p>
                 </div>
                 <div className="mt-8 lg:mt-0 lg:col-span-5 flex justify-center w-full h-full max-h-[450px]">
-                  <div className="w-full aspect-video max-w-lg lg:max-w-full flex justify-center items-center min-w-[200px]">
-                        {i18n.language  === 'bg' ? (
+                    <div className="w-full aspect-video max-w-lg lg:max-w-full flex justify-center items-center min-w-[200px]">
+                        {i18n.language === 'bg' ? (
                             <iframe
                                 width="100%"
                                 height="100%"
@@ -56,8 +56,7 @@ export default function Hero({ videoUrl }) {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title="Video BG"
-                                frameborder="0"
-                                webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                webkitallowfullscreen="true" mozallowfullscreen="true" 
                             ></iframe>
 
 
@@ -67,7 +66,7 @@ export default function Hero({ videoUrl }) {
                                 height="100%"
                                 src="https://www.loom.com/embed/30012d67d8534cf88c7e974bca82f199?sid=333acb5d-678d-4c4c-81c7-dbe1634e08b6"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
+                                webkitallowfullscreen="true" mozallowfullscreen="true" 
                                 title="Video EN"
                             ></iframe>
                         )}
