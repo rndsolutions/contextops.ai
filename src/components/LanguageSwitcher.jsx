@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import React from "react";
 import Flag from "react-world-flags";
 
 const languages = [
@@ -12,7 +11,7 @@ export function LanguageSwitcher() {
   const currentLang = i18n.language;
 
   return (
-    <div className="flex space-x-3 items-center px-10">
+    <div className="flex space-x-3 items-center px-5 py-5 sm:py-0">
       {languages.map((lang) => (
         <button
           key={lang.code}
@@ -24,7 +23,7 @@ export function LanguageSwitcher() {
         >
           <Flag
             code={lang.countryCode.toUpperCase()}
-            style={{ width: "35px",  borderRadius: "0px", border: "1px solid black" }}
+            style={{ width: "30px",  borderRadius: "0px", border: "1px solid black" }}
             title={lang.alt}
           />
         </button>

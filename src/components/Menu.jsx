@@ -33,7 +33,7 @@ export default function Menu() {
 
 				{/* Heading */}
 				<div className="mr-auto text-md font-semibold text-neutral-900 flex gap-1 items-center">
-					<img src="/public/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />
+					<img src="/logo-2.png" alt="ContextOps Logo" className="h-16 max-w-xs mr-1" />
 					<span className="  whitespace-nowrap"> {t("menu.title")}</span>
 				</div>
 
@@ -68,9 +68,9 @@ export default function Menu() {
 						{t("menu.contact")}
 					</a>
 
+					<LanguageSwitcher />
 
 				</nav>
-				<LanguageSwitcher />
 			</div>
 		</header>
 	);
