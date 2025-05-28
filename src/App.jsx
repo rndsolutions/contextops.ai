@@ -30,21 +30,21 @@ export default function MainPage() {
 
         <Features
           orientation="right"
-          imageSrc="/public/knowledge_ai.png"
+          imageSrc="/knowledge_ai.png"
           title={t('features.feature1Title')}
           description={t('features.feature1Description')}
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="left"
-          imageSrc="/public/smarter_team.png"
+          imageSrc="/smarter_team.png"
           title={t('features.feature2Title')}
           description={t('features.feature2Description')}
         />
         <div className="h-1 bg-gray-200"></div>
         <Features
           orientation="right"
-          imageSrc="/public/security.png"
+          imageSrc="/security.png"
           title={t('features.feature3Title')}
           description={t('features.feature3Description')}
         />
